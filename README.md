@@ -1,4 +1,4 @@
-# .bash_profile
+# .bash_profile/.bashrc
 
 ```bash
 parse_git_branch() {
