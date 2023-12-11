@@ -1,7 +1,8 @@
 # LINUX / BASH scripts
 
 ```bash
-apt install -y lolcat
+apt install -y vim curl lolcat espeak build-essential git ncal python3-dev python3-venv vlc
+apt install -y gnome-tweaks
 ```
 
 ```bash
