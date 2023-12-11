@@ -4,26 +4,23 @@
 apt install -y lolcat
 ```
 
-## .bash_profile/.bashrc git shortcuts
-
 ```bash
+# .bash_profile/.bashrc
+
+## git shortcuts
 parse_git_branch() {
      git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/ (\1)/'
 }
 export PS1="\u@\h \[\033[32m\]\w\[\033[33m\]\$(parse_git_branch)\[\033[00m\] $ "
-
 alias gitaa='git add .; git commit -m wip; git push;'
 alias git-='git checkout -'
 ```
 
-<hr>
-
-## Animated Terminal clock
-
 ```bash
-#!/bin/bash
+# Animated Terminal clock
 
-# /usr/local/bin/tclock
+#!/bin/bash
+# place in /usr/local/bin/tclock
 
 COLORSEED=1;
 function getdate {
