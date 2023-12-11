@@ -23,7 +23,7 @@ alias git-='git checkout -'
 # place in /usr/local/bin/tclock
 
 COLORSEED=1;
-function getdate {
+getdate() {
     python3 -c "import datetime as dt; print(dt.datetime.now().strftime('%a %b %d %H:%M:%S'))"
 }
 while true; do
