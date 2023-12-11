@@ -1,7 +1,7 @@
 # LINUX / BASH scripts
 
 ```bash
-apt install -y vim curl lolcat espeak build-essential git ncal python3-dev python3-venv vlc
+apt install -y vim curl lolcat cmatrix espeak build-essential git ncal python3-dev python3-venv vlc
 apt install -y gnome-tweaks
 ```
 
@@ -15,6 +15,10 @@ parse_git_branch() {
 export PS1="\u@\h \[\033[32m\]\w\[\033[33m\]\$(parse_git_branch)\[\033[00m\] $ "
 alias gitaa='git add .; git commit -m wip; git push;'
 alias git-='git checkout -'
+
+## for the lols
+alias matrix='cmatrix -bas'
+cmatrix -bas
 ```
 
 ```bash
