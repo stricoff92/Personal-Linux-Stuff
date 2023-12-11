@@ -1,4 +1,6 @@
-# .bash_profile/.bashrc
+# LINUX / BASH scripts
+
+## .bash_profile/.bashrc git shortcuts
 
 ```bash
 parse_git_branch() {
@@ -7,14 +9,12 @@ parse_git_branch() {
 export PS1="\u@\h \[\033[32m\]\w\[\033[33m\]\$(parse_git_branch)\[\033[00m\] $ "
 
 alias gitaa='git add .; git commit -m wip; git push;'
-alias profile='vim ~/.bashrc'
 alias git-='git checkout -'
-
-
 ```
 
 
-# Animated Terminal clock
+## Animated Terminal clock
+
 ```bash
 #!/bin/bash
 
