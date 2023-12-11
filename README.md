@@ -12,3 +12,25 @@ alias git-='git checkout -'
 
 
 ```
+
+
+# Animated Terminal clock
+```bash
+#!/bin/bash
+
+# /usr/local/bin/tclock
+
+COLORSEED=1;
+function getdate {
+    python3 -c "import datetime as dt; print(dt.datetime.now().strftime('%a %b %d %H:%M:%S'))"
+}
+while true; do
+    if [ "$COLORSEED" -ge "10000000" ]; then
+        COLORSEED=1
+    else
+        COLORSEED=$(( $COLORSEED + 2 ))
+    fi
+    getdate | lolcat -S $COLORSEED;
+    sleep 0.02;
+done
+```
