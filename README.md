@@ -12,6 +12,7 @@ alias gitaa='git add .; git commit -m wip; git push;'
 alias git-='git checkout -'
 ```
 
+<hr>
 
 ## Animated Terminal clock
 
