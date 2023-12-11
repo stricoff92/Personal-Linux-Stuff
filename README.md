@@ -1,5 +1,9 @@
 # LINUX / BASH scripts
 
+```bash
+apt install -y lolcat
+```
+
 ## .bash_profile/.bashrc git shortcuts
 
 ```bash
