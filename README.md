@@ -24,8 +24,7 @@ cmatrix -bas
 # Remove Discord's default minumum Window Size
 
 cat | python3 <<EOL
-import os
-import json
+import json, os
 cfg_file = os.path.join(os.environ['HOME'], '.config/discord/settings.json')
 with open(cfg_file) as f:
     cfg_data = json.load(f)
