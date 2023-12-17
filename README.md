@@ -1,7 +1,6 @@
 # LINUX / BASH scripts
 
 <img src="https://media1.tenor.com/m/y-cCxl8uEw0AAAAC/yetopen.gif" width="180px">
-<img src="https://media.tenor.com/T6Kn_-IrVNQAAAAj/vim-linux.gif" width="180px">
 
 ```bash
 apt install -y vim curl lolcat cmatrix espeak build-essential git ncal python3-dev python3-venv vlc
