@@ -22,6 +22,7 @@ cmatrix -bas
 ```
 ```bash
 # Remove Discord's default minumum Window Size
+
 cat | python3 <<EOL
 import os
 import json
