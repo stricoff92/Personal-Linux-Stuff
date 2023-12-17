@@ -20,6 +20,21 @@ alias git-='git checkout -'
 alias matrix='cmatrix -bas'
 cmatrix -bas
 ```
+```bash
+# Remove Discord's default minumum Window Size
+cat | python3 <<EOL
+import os
+import json
+cfg_file = os.path.join(os.environ['HOME'], '.config/discord/settings.json')
+with open(cfg_file) as f:
+    cfg_data = json.load(f)
+cfg_data['MIN_WIDTH'] = 0
+cfg_data['MIN_HEIGHT'] = 0
+with open(cfg_file, 'w') as f:
+    json.dump(cfg_data, f, indent=2)
+print(f"{cfg_file} updated")
+EOL
+```
 
 ```bash
 # Animated Terminal clock
