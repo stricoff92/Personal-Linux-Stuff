@@ -1,5 +1,7 @@
 # LINUX / BASH scripts
 
+![](https://media1.tenor.com/m/y-cCxl8uEw0AAAAC/yetopen.gif)
+
 ```bash
 apt install -y vim curl lolcat cmatrix espeak build-essential git ncal python3-dev python3-venv vlc
 apt install -y gnome-tweaks
