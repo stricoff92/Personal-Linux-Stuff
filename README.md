@@ -6,6 +6,14 @@
 apt install -y vim curl lolcat cmatrix espeak build-essential git ncal python3-dev python3-venv vlc
 apt install -y gnome-tweaks
 ```
+```bash
+# Manage firewalls
+
+# ubuntu
+sudo ufw enable
+sudo ufw default deny incoming
+sudo ufw allow from 192.168.1.0/24 to 0.0.0.0/0 port 22
+```
 
 ```bash
 # .bash_profile/.bashrc
