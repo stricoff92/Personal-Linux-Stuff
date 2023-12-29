@@ -35,7 +35,11 @@ cmatrix -bas
 
 cat | python3 <<EOL
 import json, os
-cfg_file = os.path.join(os.environ['HOME'], '.config/discord/settings.json')
+
+# uncomment one of these
+# cfg_file = os.path.join(os.environ['HOME'], '.config/discord/settings.json') # .deb
+cfg_file = os.path.join(os.environ['HOME'], '.var/app/com.discordapp.Discord/config/discord/settings.json') # flatpak
+
 with open(cfg_file) as f:
     cfg_data = json.load(f)
 cfg_data['MIN_WIDTH'] = 0
