@@ -25,6 +25,7 @@ parse_git_branch() {
 export PS1="\u@\h \[\033[32m\]\w\[\033[33m\]\$(parse_git_branch)\[\033[00m\] $ "
 alias gitaa='git add .; git commit -m wip; git push;'
 alias git-='git checkout -'
+alias gitpsu='git push --set-upstream origin $(git rev-parse --abbrev-ref HEAD)'
 
 ## for the lols
 alias matrix='cmatrix -bas'
