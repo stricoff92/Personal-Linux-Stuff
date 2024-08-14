@@ -72,7 +72,7 @@ while true; do
 done
 ```
 
-#backup
+# backup
 ```bash
 rsync \
     --exclude .cache/ \
