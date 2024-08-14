@@ -5,10 +5,6 @@ This readme contains configurations for my own personal debian environment. It m
 <img src="https://media1.tenor.com/m/y-cCxl8uEw0AAAAC/yetopen.gif" width="180px">
 
 ```bash
-apt install -y vim curl lolcat cmatrix espeak build-essential git ncal python3-dev python3-venv vlc
-apt install -y gnome-tweaks
-```
-```bash
 # Manage firewalls
 
 sudo ufw enable
