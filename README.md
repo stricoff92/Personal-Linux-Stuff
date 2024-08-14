@@ -1,5 +1,7 @@
 # LINUX / BASH scripts
 
+This contains configurations for my own personal debian environment. It may contain IDs that are specific to me.
+
 <img src="https://media1.tenor.com/m/y-cCxl8uEw0AAAAC/yetopen.gif" width="180px">
 
 ```bash
@@ -70,6 +72,11 @@ while true; do
     getdate | lolcat -S $COLORSEED;
     sleep 0.02;
 done
+```
+# archive
+```bash
+# fstab
+UUID="41fec3a1-54cd-46cd-980a-05cfa160a3c1" /media/jon/archive ext4 defaults,nofail                      0 0
 ```
 
 # backup
