@@ -71,3 +71,22 @@ while true; do
     sleep 0.02;
 done
 ```
+
+#backup
+```bash
+rsync \
+    --exclude .cache/ \
+    --exclude .local \
+    --exclude .steam \
+    --exclude .vscode \
+    --exclude .thunderbird/ \
+    --exclude .var \
+    --exclude .config \
+    --exclude .nvm \
+    --exclude .npm \
+    --exclude .mozilla \
+    --exclude .jupyter \
+    --exclude .zoom \
+    --exclude env \
+    -av /home/$USER/ /media/$USER/archive/$(hostname)_$(hostnamectl | grep -i 'Machine ID' | awk '{ print $3 }')/
+```
