@@ -1,6 +1,6 @@
 # LINUX / BASH scripts
 
-This contains configurations for my own personal debian environment. It may contain IDs that are specific to me.
+This readme contains configurations for my own personal debian environment. It may contain IDs that are specific to me.
 
 <img src="https://media1.tenor.com/m/y-cCxl8uEw0AAAAC/yetopen.gif" width="180px">
 
@@ -11,7 +11,6 @@ apt install -y gnome-tweaks
 ```bash
 # Manage firewalls
 
-# ubuntu
 sudo ufw enable
 sudo ufw default deny incoming
 sudo ufw allow from 192.168.1.0/24 to 0.0.0.0/0 port 22
