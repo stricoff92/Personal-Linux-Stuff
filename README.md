@@ -20,25 +20,25 @@ parse_git_branch() {
      git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/ (\1)/'
 }
 export PS1="\u@\h \[\033[32m\]\w\[\033[33m\]\$(parse_git_branch)\[\033[00m\] $ "
+
+```
+
+```bash
+# .bash_aliases
+
 alias gitaa='git add .; git commit -m wip; git push;'
 alias git-='git checkout -'
 alias gitpsu='git push --set-upstream origin $(git rev-parse --abbrev-ref HEAD)'
 alias envup='souce env/bin/activate'
 
-## for the lols
-alias matrix='cmatrix -bas'
-cmatrix -bas
 ```
+
 ```bash
 # Remove Discord's default minumum Window Size
 
 cat | python3 <<EOL
 import json, os
-
-# uncomment one of these
-# cfg_file = os.path.join(os.environ['HOME'], '.config/discord/settings.json') # .deb
 cfg_file = os.path.join(os.environ['HOME'], '.var/app/com.discordapp.Discord/config/discord/settings.json') # flatpak
-
 with open(cfg_file) as f:
     cfg_data = json.load(f)
 cfg_data['MIN_WIDTH'] = 0
@@ -49,26 +49,7 @@ print(f"{cfg_file} updated")
 EOL
 ```
 
-```bash
-# Animated Terminal clock
 
-#!/bin/bash
-# place in /usr/local/bin/tclock
-
-COLORSEED=1;
-getdate() {
-    python3 -c "import datetime as dt; print(dt.datetime.now().strftime('%a %b %d %H:%M:%S'))"
-}
-while true; do
-    if [ "$COLORSEED" -ge "10000000" ]; then
-        COLORSEED=1
-    else
-        COLORSEED=$(( $COLORSEED + 2 ))
-    fi
-    getdate | lolcat -S $COLORSEED;
-    sleep 0.02;
-done
-```
 # archive
 ```bash
 # fstab
