@@ -77,20 +77,42 @@ UUID="41fec3a1-54cd-46cd-980a-05cfa160a3c1" /media/jon/archive ext4 defaults,nof
 
 # backup
 ```bash
+
+# copy to external media
 rsync \
-    --exclude .cache/ \
+    --exclude .cache \
+    --exclude .config \
     --exclude .local \
+    --exclude .jupyter \
+    --exclude .mozilla \
+    --exclude .npm \
+    --exclude .nvm \
     --exclude .steam \
-    --exclude .vscode \
     --exclude .thunderbird/ \
     --exclude .var \
-    --exclude .config \
-    --exclude .nvm \
-    --exclude .npm \
-    --exclude .mozilla \
-    --exclude .jupyter \
+    --exclude .vscode \
     --exclude .zoom \
     --exclude env \
+    --exclude node_modules \
     -av /home/$USER/ /media/$USER/archive/$(hostname)_$(hostnamectl | grep -i 'Machine ID' | awk '{ print $3 }')/
+
+# compress to tar.gz
+CUR_DATE="`date +"%d-%m-%Y"`"
+tar -czvf "bak_$CUR_DATE.tar.gz" /media/$USER/archive/$(hostname)_$(hostnamectl | grep -i 'Machine ID' | awk '{ print $3 }')/
+
+# encrypt with password
+gpg -c "bak_$CUR_DATE.tar.gz"
 ```
 
+# Customize Login Screen
+```bash
+sudo cat <<EOT >> /etc/dconf/db/gdm.d/00-login-screen
+[org/gnome/login-screen]
+# Do not show the user list
+disable-user-list=true
+banner-message-enable=true
+banner-message-text='hello, friend'
+logo='/usr/share/pixmaps/yetopen.gif'
+EOT
+sudo dconf update
+```
