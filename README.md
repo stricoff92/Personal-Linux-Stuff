@@ -76,6 +76,7 @@ rsync \
     --exclude .zoom \
     --exclude env \
     --exclude node_modules \
+    --exclude Downloads \
     -av /home/$USER/ /media/$USER/archive/$(hostname)_$(hostnamectl | grep -i 'Machine ID' | awk '{ print $3 }')/
 
 # compress to tar.gz
