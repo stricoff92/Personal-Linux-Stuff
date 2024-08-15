@@ -1,6 +1,7 @@
-# LINUX / BASH scripts
+# GNU/LINUX Bash Scripts
 
-This readme contains configurations for my own personal debian environment. It may contain IDs that are specific to me.
+This readme contains configurations for my own personal debian environment. It contains a few IDs that are specific to me.
+
 
 <img src="https://media1.tenor.com/m/y-cCxl8uEw0AAAAC/yetopen.gif" width="180px">
 
