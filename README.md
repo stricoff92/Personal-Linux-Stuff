@@ -11,6 +11,10 @@ This readme contains configurations for my own personal debian environment. It c
 sudo ufw enable
 sudo ufw default deny incoming
 sudo ufw allow from 192.168.1.0/24 to 0.0.0.0/0 port 22
+
+
+# add poweroff to path
+sudo ln -s /usr/sbin/poweroff /usr/bin/
 ```
 
 ```bash
