@@ -98,4 +98,7 @@ banner-message-text='hello, friend'
 logo='/usr/share/pixmaps/image.png'
 EOT
 sudo dconf update
+
+# or edit /etc/gdm3/greeter.dconf-defaults
 ```
+
