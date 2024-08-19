@@ -13,8 +13,9 @@ sudo ufw default deny incoming
 sudo ufw allow from 192.168.1.0/24 to 0.0.0.0/0 port 22
 
 
-# add poweroff to path
+# add poweroff & reboot to path
 sudo ln -s /usr/sbin/poweroff /usr/bin/
+sudo ln -s /usr/sbin/reboot /usr/bin/
 ```
 
 ```bash
