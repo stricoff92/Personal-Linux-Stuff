@@ -123,8 +123,8 @@ typedef int64_t     i64;
 typedef float       f32;
 typedef double      f64;
 
-#define U8(v) ((u8)(v))
-#define I8(v) ((i8)(v))
+#define U8(v)  ((u8)(v))
+#define I8(v)  ((i8)(v))
 #define U16(v) ((u16)(v))
 #define I16(v) ((i16)(v))
 #define U32(v) ((u32)(v))
