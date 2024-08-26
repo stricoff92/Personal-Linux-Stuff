@@ -36,6 +36,7 @@ alias gitaa='git add .; git commit -m wip; git push;'
 alias git-='git checkout -'
 alias gitpsu='git push --set-upstream origin $(git rev-parse --abbrev-ref HEAD)'
 alias envup='souce env/bin/activate'
+alias aliasup='source .bash_aliases'
 
 ```
 
