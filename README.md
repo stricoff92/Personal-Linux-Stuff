@@ -19,6 +19,14 @@ sudo ln -s /usr/sbin/reboot /usr/bin/
 ```
 
 ```bash
+# Disable "Super + p" shortcut
+gsettings get org.gnome.mutter.keybindings switch-monitor
+# expected output: ['<Super>p', 'XF86Display']
+
+gsettings set org.gnome.mutter.keybindings switch-monitor "['XF86Display']"
+```
+
+```bash
 # .bash_profile/.bashrc
 
 ## git shortcuts
