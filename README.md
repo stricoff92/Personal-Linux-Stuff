@@ -13,6 +13,14 @@ sudo ufw default deny incoming
 sudo ufw allow from 192.168.1.0/24 to 0.0.0.0/0 port 22
 
 
+# Disable "Super + p" shortcut
+gsettings get org.gnome.mutter.keybindings switch-monitor
+# expected output: ['<Super>p', 'XF86Display']
+
+# disable shortcut
+gsettings set org.gnome.mutter.keybindings switch-monitor "['XF86Display']"
+
+
 # add poweroff & reboot to path
 sudo ln -s /usr/sbin/poweroff /usr/bin/
 sudo ln -s /usr/sbin/reboot /usr/bin/
