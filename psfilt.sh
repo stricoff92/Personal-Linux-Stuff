@@ -4,7 +4,7 @@
 # A simple script to filter ps output by process name, show the first match
 # and display the output with 1 value per line.
 
-# example output use
+# example output
 # foo@ra ~ $ psfilt apc
 
 # USER		foo
