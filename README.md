@@ -158,3 +158,6 @@ typedef double      f64;
 
 #define typedef_packed_struct typedef struct __attribute__((packed))
 ```
+
+<img src="https://media.tenor.com/GOmdYqT_dDoAAAAi/madden-school-modrew-gnu.gif" height="100px">
+
