@@ -59,7 +59,7 @@ alias aliasup='source .bash_aliases'
 ```bash
 # Add process filtering program to PATH
 sudo cat psfilt.sh > /usr/local/bin/psfilt
-chmod +x /usr/local/bin/psfilt
+sudo chmod +x /usr/local/bin/psfilt
 ```
 
 ```bash
