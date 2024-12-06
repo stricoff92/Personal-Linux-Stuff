@@ -1,7 +1,24 @@
 
 #!/bin/bash
 
-# A simple script to filter ps output by process name, and also show headers
+# A simple script to filter ps output by process name, show the first match
+# and display the output with 1 value per line.
+
+# example output use
+# foo@ra ~ $ psfilt apc
+
+# USER		foo
+# PID		67984
+# %CPU		1.1
+# %MEM		0.0
+# VSZ		3756
+# RSS		2644
+# TTY		pts/0
+# STAT		S+
+# START		15:52
+# TIME		0:17
+# COMMAND   /home/foo/bar/build/apc
+
 
 # CLI arg 1: process name to filter for
 filtervalue=$1
