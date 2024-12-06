@@ -3,7 +3,6 @@
 This readme contains configurations for my own personal __debian__ environment. It contains a few IDs that are specific to me.
 
 
-<img src="https://media1.tenor.com/m/y-cCxl8uEw0AAAAC/yetopen.gif" height="50px">
 <img src="https://media1.tenor.com/m/BcVGTaZaNccAAAAC/debian-linux.gif" height="50px">
 
 ```bash
