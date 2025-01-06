@@ -5,6 +5,20 @@ This readme contains configurations for my own personal __debian__ environment. 
 
 <img src="https://media1.tenor.com/m/BcVGTaZaNccAAAAC/debian-linux.gif" height="50px">
 
+
+```bash
+sudo apt update
+sudo apt upgrade
+sudo apt install \
+    curl \
+    git \
+    ufw \
+    vim \
+    python3-dev \
+    openssh-server \
+    terminator
+```
+
 ```bash
 # Manage firewalls
 
