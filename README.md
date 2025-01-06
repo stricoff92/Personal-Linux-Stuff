@@ -137,7 +137,7 @@ sudo cat <<EOT >> /etc/dconf/db/gdm.d/00-login-screen
 disable-user-list=true
 banner-message-enable=true
 banner-message-text='hello, friend'
-logo='/usr/share/pixmaps/image.png'
+# logo='/usr/share/pixmaps/image.png'
 EOT
 sudo dconf update
 
