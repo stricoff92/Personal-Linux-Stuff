@@ -16,12 +16,14 @@ sudo apt install \
     build-essential make cmake \
     gcc g++ clang \
     curl wget \
+    pavucontrol \
     lshw \
     flatpak \
     git \
     ufw \
-    vim \
+    vim kate \
     nmap \
+    whois \
     net-tools \
     python3-dev python3-venv \
     openssh-server \
