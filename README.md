@@ -25,12 +25,13 @@ sudo apt install \
     openssh-server \
     terminator \
     tree \
+    pulseaudio \
     espeak \
+    audacity \
     redis \
     postgresql \
     mariadb-server \
     nginx
-
 ```
 
 ```bash
