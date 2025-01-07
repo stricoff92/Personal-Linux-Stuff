@@ -16,6 +16,7 @@ sudo apt install \
     build-essential make cmake \
     gcc g++ clang \
     curl wget \
+    lshw \
     flatpak \
     git \
     ufw \
@@ -51,6 +52,9 @@ flatpak install flathub io.dbeaver.DBeaverCommunity
 <hr>
 
 ```bash
+# disable bluetooth
+sudo systemctl disable bluetooth.service
+
 # Manage firewalls
 
 sudo ufw enable
