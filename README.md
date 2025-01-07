@@ -31,11 +31,13 @@ sudo apt install \
     redis \
     postgresql \
     mariadb-server \
-    nginx
+    nginx \
+    chromium
 
 # Flatpak apps
 flatpak install com.discordapp.Discord
-flatpak install com.google.Chrome
+flatpak install com.google.Chrome           # alternative to debian repo chrome
+flatpak install org.chromium.Chromium       # alternative to chrome
 flatpak install flathub org.mozilla.firefox # alternative to firefox ESR
 flatpak install com.vscodium.codium
 flatpak install flathub io.dbeaver.DBeaverCommunity
