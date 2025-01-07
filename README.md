@@ -10,13 +10,23 @@ This readme contains configurations for my own personal __debian__ environment. 
 sudo apt update
 sudo apt upgrade
 sudo apt install \
-    curl \
+    neofetch \
+    build-essential make cmake \
+    gcc g++ clang \
+    curl wget \
     git \
     ufw \
     vim \
     python3-dev \
+    python3-venv \
     openssh-server \
-    terminator
+    terminator \
+    tree \
+    espeak \
+    redis \
+    postgresql \
+    mariadb-server
+
 ```
 
 ```bash
