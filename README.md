@@ -20,8 +20,7 @@ sudo apt install \
     git \
     ufw \
     vim \
-    python3-dev \
-    python3-venv \
+    python3-dev python3-venv \
     openssh-server \
     terminator \
     tree \
@@ -29,8 +28,7 @@ sudo apt install \
     espeak \
     audacity \
     redis \
-    postgresql \
-    mariadb-server \
+    postgresql mariadb-server \
     nginx \
     chromium
 
