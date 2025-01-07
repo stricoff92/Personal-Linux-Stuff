@@ -9,11 +9,14 @@ This readme contains configurations for my own personal __debian__ environment. 
 ```bash
 sudo apt update
 sudo apt upgrade
+
+# Add/Remove packages that may or may not be needed
 sudo apt install \
     neofetch \
     build-essential make cmake \
     gcc g++ clang \
     curl wget \
+    flatpak \
     git \
     ufw \
     vim \
@@ -25,7 +28,8 @@ sudo apt install \
     espeak \
     redis \
     postgresql \
-    mariadb-server
+    mariadb-server \
+    nginx
 
 ```
 
