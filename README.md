@@ -22,6 +22,7 @@ sudo apt install \
     ufw \
     vim \
     nmap \
+    net-tools \
     python3-dev python3-venv \
     openssh-server \
     terminator \
