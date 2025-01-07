@@ -32,7 +32,23 @@ sudo apt install \
     postgresql \
     mariadb-server \
     nginx
+
+# Flatpak apps
+flatpak install com.discordapp.Discord
+flatpak install com.google.Chrome
+flatpak install flathub org.mozilla.firefox # alternative to firefox ESR
+flatpak install com.vscodium.codium
+flatpak install flathub io.dbeaver.DBeaverCommunity
 ```
+
+### Additional softwares
+ - https://github.com/nvm-sh/nvm
+ - https://github.com/emscripten-core/emscripten
+ - https://extensions.gnome.org/extension/4174/systemd-manager/
+ - https://extensions.gnome.org/extension/3193/blur-my-shell/
+
+
+<hr>
 
 ```bash
 # Manage firewalls
