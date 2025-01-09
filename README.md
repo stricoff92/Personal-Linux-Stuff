@@ -183,7 +183,7 @@ sudo dconf update
 # or edit /etc/gdm3/greeter.dconf-defaults
 ```
 
-# C app types (gcc)
+# C app types (gcc/clang)
 ```c
 #include <stdint.h>
 
@@ -210,6 +210,35 @@ typedef double      f64;
 #define F64(v) ((f64)(v))
 
 #define typedef_packed_struct typedef struct __attribute__((packed))
+
+typedef union {
+    f64 f64_v;
+    u64 u64_v;
+    u32 u32_v[2];
+    i32 i32_v[2];
+    f32 f32_v[2];
+    u8  u8_v[8];
+    i8  i8_v[8];
+} punner_64_t;
+
+typedef union {
+    f32 f32_v;
+    u32 u32_v;
+    i32 i32_v;
+    u16 u16_v[2];
+    i16 i16_v[2];
+    u8  u8_v[4];
+    i8  i8_v[4];
+} punner_32_t;
+
+typedef union {
+    u16 u16_v;
+    i16 i16_v;
+    u8  u8_v[2];
+    i8  i8_v[2];
+} punner_16_t;
+
+
 ```
 
 <img src="https://media.tenor.com/GOmdYqT_dDoAAAAi/madden-school-modrew-gnu.gif" height="100px">
