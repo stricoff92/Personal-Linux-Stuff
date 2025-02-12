@@ -170,14 +170,21 @@ gpg -c "bak_$CUR_DATE.tar.gz"
 
 # Customize Login Screen
 ```bash
+
+# Instructions from
+# https://help.gnome.org/admin/system-admin-guide/stable/login-userlist-disable.html.en
+
+sudo cat <<EOT >> /etc/dconf/profile/gdm
+user-db:user
+system-db:gdm
+file-db:/usr/share/gdm/greeter-dconf-defaults
+EOT
+
 sudo cat <<EOT >> /etc/dconf/db/gdm.d/00-login-screen
 [org/gnome/login-screen]
-# Do not show the user list
 disable-user-list=true
-banner-message-enable=true
-banner-message-text='hello, friend'
-# logo='/usr/share/pixmaps/image.png'
 EOT
+
 sudo dconf update
 
 # or edit /etc/gdm3/greeter.dconf-defaults
