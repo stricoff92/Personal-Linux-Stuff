@@ -53,7 +53,18 @@ flatpak install flathub io.dbeaver.DBeaverCommunity
  - https://extensions.gnome.org/extension/3193/blur-my-shell/
 
 
+### Printer Server Setup
+
+```bash
+sudo apt install printer-driver-brlaser
+sudo ufw allow from 192.168.1.0/24 to 0.0.0.0/0 port 631 # cups
+
+```
+
+
+
 <hr>
+
 
 ```bash
 # disable bluetooth
