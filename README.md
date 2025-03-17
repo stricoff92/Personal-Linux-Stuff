@@ -61,7 +61,25 @@ sudo ufw allow from 192.168.1.0/24 to 0.0.0.0/0 port 631 # cups
 
 ```
 
+### For laptop servers
 
+```bash
+ sudo systemctl mask sleep.target suspend.target hibernate.target hybrid-sleep.target
+
+
+
+# Edit /etc/systemd/logind.conf
+
+# Change
+
+# #HandleLidSwitch=suspend
+# #HandleLidSwitchExternalPower=suspend
+
+# to
+
+# HandleLidSwitch=ignore
+#HandleLidSwitchExternalPower=ignore
+```
 
 <hr>
 
