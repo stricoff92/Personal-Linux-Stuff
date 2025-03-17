@@ -77,8 +77,8 @@ sudo ufw allow from 192.168.1.0/24 to 0.0.0.0/0 port 631 # cups
 
 # to
 
-# HandleLidSwitch=ignore
-#HandleLidSwitchExternalPower=ignore
+HandleLidSwitch=ignore
+HandleLidSwitchExternalPower=ignore
 ```
 
 <hr>
